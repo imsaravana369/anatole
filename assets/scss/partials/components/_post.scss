@@ -39,6 +39,13 @@
     }
   }
 
+  &__card {
+    display: flex;
+    align-items: center;
+    @include themed() {
+      border-bottom: t('border');
+    }
+  }
   &__thumbnail {
     width: 100%;
     height: $thumbnail-height;
@@ -215,9 +222,6 @@
   &__footer {
     padding: 12px 0;
 
-    @include themed() {
-      border-bottom: t('border');
-    }
 
     &-date {
       font-size: 1.4rem;
